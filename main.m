@@ -1,7 +1,6 @@
 % =========================================================================
-% Zhen Liu, Xiao-Jun Wu, and Zhenqiu Shu,
-% "Weighed collaborative representation with multi-resolution dictionary for face recognition" in ICPR2020.
-%
+% "Locality-constrained collaborative representation with multi-resolution dictionary for face recognition" 
+% Zhen Liu, Xiao-Jun Wu, Hefeng Yin, Tianyang Xu, and Zhenqiu Shu
 % Written by Zhen Liu @ JNU
 % July, 2020.
 % =========================================================================
@@ -60,7 +59,7 @@ for train_num = 5
                 W = diag(G/max(G));
                 
                 T = inv(traindata'*traindata +lambda*W'*W)*traindata';
-                [id]    =   Classification_WCRMRD(train_data3,train_data2,train_data4,T,test_data(:,indTest),train_label,NUm);
+                [id]    =   Classification(train_data3,train_data2,train_data4,T,test_data(:,indTest),train_label,NUm);
                 ID      =   [ID id];
             end
 
