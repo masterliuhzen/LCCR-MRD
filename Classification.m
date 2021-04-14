@@ -1,6 +1,4 @@
-function [id]= Classification_WCRMRD(D1,D2,D3,class_pinv_M,y,Dlabels,Num)
-%------------------------------------------------------------------------
-% Classification_WCRMRD
+function [id]= Classification(D1,D2,D3,class_pinv_M,y,Dlabels,Num)
 coef         =  class_pinv_M*y;
 coef_a1 =  coef(1:Num);
 coef_a2 =  coef(Num+1:2*Num);
