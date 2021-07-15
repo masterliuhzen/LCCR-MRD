@@ -1,6 +1,6 @@
 The code is for the paper:
 
-"Locality-constrained collaborative representation with multi-resolution dictionary for face recognition" 
+"Locality-constrained collaborative representation with multi-resolution dictionary for face recognition" ， which has been accepted by "PRCV2021"
 
 Zhen Liu, Xiao-Jun Wu, Hefeng Yin, Tianyang Xu, and Zhenqiu Shu 
 
